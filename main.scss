@@ -1,0 +1,192 @@
+ @import 'variables';
+ html {
+    scroll-behavior: smooth;
+ }
+ 
+ body {
+   margin: 0;
+   padding: 0;
+   background: #232323;
+   font-family: "Avenir Next", "Avenir", sans-serif;
+ }
+
+ #cover {
+    background-image: url(nature-forest-trees-fog.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.nav {
+    border-bottom: 1px solid hotpink;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+
+    label {
+        margin: 0 40px 0 0;
+        font-size: 25px;
+        line-height: 70px;
+        //display: none;
+        
+        float: right;
+        color: $helloWorld;
+        display: block;
+        cursor: pointer;
+    }
+
+    #toggle {
+        display: none;
+    }
+
+.menu {
+    margin: 0 30px 0 0;
+    width: 100%;
+    display: none;
+
+    a {
+        clear: right;
+        text-decoration: none;
+        color: gray;
+        margin: 0 10px;
+        line-height: 70px;
+        display: block;
+    }
+#toggle:checked + .menu {
+    display: block;
+}
+
+}
+}
+ header.header {
+    position: fixed;
+    top: 0; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 40px;
+    background-color: $Headingcolor;
+
+    a {
+        height: auto;
+    }
+ }
+
+ #cover {
+     width: 100vw;
+     height: 100vh;
+ }
+ 
+#headingcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 9vw;
+
+    p {
+        letter-spacing: 5px;
+        color: $Headingcolor;
+    }
+
+    #moreaboutme {
+        color: $Headingcolor;
+        border: 2px solid;
+        padding: 0 28px;
+    }
+
+    #moreaboutme:hover{
+        border-width: 2px;
+        border-style: solid; 
+        border-color: $helloWorld;
+    }
+}
+
+#socialcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 20%;
+    margin: 0 40%;
+    position: absolute;
+    bottom: 5vw;
+
+    .social {
+        background-size: contain;
+        width: 40px;
+        height: 40px;
+    }
+
+
+    #linkedin {
+        background-image: url(icons/linked.png);
+    }
+    #linkedin:hover {
+        background-image: url(icons/hovercolor/hoverlinked.png);
+    }
+    
+    #gmail {
+        background-image: url(icons/gmail.png);
+    }
+    #gmail:hover {
+        background-image: url(icons/hovercolor/hovergmail.png);
+    }
+    #github{
+        background-image: url(icons/github.png);
+    }
+    #github:hover{
+        background-image: url(icons/hovercolor/hovergithub.png);
+    }
+    #phone {
+        background-image: url(icons/phone.png);
+    }
+    #phone:hover {
+        background-image: url(icons/hovercolor/hoverphone.png);
+    }
+}
+
+ h2 {
+    font-size: 3vw;
+    margin: 0;
+    color: $helloWorld;
+}
+h1 {
+    font-size: 7vw;
+    margin: 0;
+    color: $Headingcolor;
+}
+
+// End of landing page 
+
+#about {
+    width: 100vw;
+    height: 100vw;
+    background-color: #F6F1EB;
+}
+
+
+//  @import 'mediabreaks';
+
+ @media only screen and (min-width: 500px) {
+    body {
+        background-color: yellow;
+    }
+
+    label { 
+        // display: block;
+        // cursor: pointer;
+        display: none;
+ }
+ .menu {
+    text-align: center;
+    width: 100%;
+    //display: none;
+    width: 26px;
+    a {
+        display: block;
+        border-bottom: 1px solid hotpink;
+        margin: 0;
+    }
+
+    
+ }
+}

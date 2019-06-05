@@ -1,0 +1,42 @@
+#socialcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 20%;
+    margin: 0 40%;
+    position: absolute;
+    bottom: 5vw;
+
+    .social {
+        background-size: contain;
+        width: 40px;
+        height: 40px;
+    }
+
+
+    #linkedin {
+        background-image: url(icons/linked.png);
+    }
+    #linkedin:hover {
+        background-image: url(icons/hovercolor/hoverlinked.png);
+    }
+    
+    #gmail {
+        background-image: url(icons/gmail.png);
+    }
+    #gmail:hover {
+        background-image: url(icons/hovercolor/hovergmail.png);
+    }
+    #github{
+        background-image: url(icons/github.png);
+    }
+    #github:hover{
+        background-image: url(icons/hovercolor/hovergithub.png);
+    }
+    #phone {
+        background-image: url(icons/phone.png);
+    }
+    #phone:hover {
+        background-image: url(icons/hovercolor/hoverphone.png);
+    }
+}
