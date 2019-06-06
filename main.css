@@ -9,28 +9,36 @@ body {
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
-#cover {
-  background-image: url(nature-forest-trees-fog.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .nav {
-  border-bottom: 1px solid #EAEAEB;
+  background-color: #555555;
   text-align: right;
-  height: 70px;
-  line-height: 70px;
+  height: 250%;
+  min-height: auto;
+  position: relative;
 }
 
 .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   margin: 0 30px 0 0;
 }
 
 .menu a {
+  clear: right;
   text-decoration: none;
-  color: gray;
-  margin: 0 10px;
-  line-height: 70px;
+  color: #F6F1EB;
+  line-height: 250%;
+  text-align: center;
+  padding-right: 5vw;
+  background-color: #555555;
+  height: auto;
+  font-size: 1.4vw;
+}
+
+.menu a:hover {
+  color: #ff8d23;
+  transition: color 1s ease-in-out;
 }
 
 label {
@@ -45,29 +53,21 @@ label {
   display: none;
 }
 
-header.header {
-  position: fixed;
-  top: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 40px;
-  background-color: #555555;
-}
-header.header a {
-  height: auto;
-}
-
 #cover {
+  background-image: url(nature-forest-trees-fog.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100vw;
-  height: 100vh;
+  height: 82vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
 }
 
 #headingcontainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 9vw;
 }
 #headingcontainer p {
   letter-spacing: 5px;
@@ -75,56 +75,63 @@ header.header a {
 }
 #headingcontainer #moreaboutme {
   color: #555555;
-  border: 2px solid;
+  border: 3px solid;
   padding: 0 28px;
 }
 #headingcontainer #moreaboutme:hover {
-  border-width: 2px;
-  border-style: solid;
   border-color: #ff8d23;
+  transition: border-color 2s ease;
 }
 
 #socialcontainer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: flex-end;
+  flex: 1;
   width: 20%;
   margin: 0 40%;
-  position: absolute;
-  bottom: 5vw;
+  padding-bottom: 5vw;
 }
 #socialcontainer .social {
   background-size: contain;
   width: 40px;
   height: 40px;
 }
+#socialcontainer .socialcontainer {
+  align-self: flex-end;
+}
 #socialcontainer #linkedin {
   background-image: url(icons/linked.png);
 }
 #socialcontainer #linkedin:hover {
   background-image: url(icons/hovercolor/hoverlinked.png);
+  transition: background-image 1s ease;
 }
 #socialcontainer #gmail {
   background-image: url(icons/gmail.png);
 }
 #socialcontainer #gmail:hover {
   background-image: url(icons/hovercolor/hovergmail.png);
+  transition: background-image 1s ease;
 }
 #socialcontainer #github {
   background-image: url(icons/github.png);
 }
 #socialcontainer #github:hover {
   background-image: url(icons/hovercolor/hovergithub.png);
+  transition: background-image 1s ease;
 }
 #socialcontainer #phone {
   background-image: url(icons/phone.png);
 }
 #socialcontainer #phone:hover {
   background-image: url(icons/hovercolor/hoverphone.png);
+  transition: background-image 1s ease;
 }
 
 h2 {
-  font-size: 3vw;
+  font-size: 1.5vw;
   margin: 0;
   color: #ff8d23;
 }
@@ -155,7 +162,7 @@ h1 {
 
   .menu a {
     display: block;
-    border-bottom: 1px solid #EAEAEB;
+    border-bottom: 1px solid #555555;
     margin: 0;
   }
 

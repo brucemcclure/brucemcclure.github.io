@@ -10,29 +10,43 @@
    font-family: "Avenir Next", "Avenir", sans-serif;
  }
 
- #cover {
-    background-image: url(nature-forest-trees-fog.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-
-.nav {
-    border-bottom: 1px solid #EAEAEB;
+ .nav {
+    background-color: $Headingcolor;
+    //border-bottom: 1px solid #EAEAEB;
     text-align: right;
-    height: 70px;
-    line-height: 70px;
+    height: $menuhight;
+    min-height: auto;
+    //line-height: auto;
+
+    position: relative;
 }
 .menu {
+    //background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin: 0 30px 0 0;
+    
 }
 
 .menu a {
-    //clear: right; 
+    clear: right; 
     text-decoration: none;
-    color: gray;
-    margin: 0 10px;
-    line-height: 70px;
+    //color: #F6F1EB;
+    color: #F6F1EB;
+    line-height: $menuhight;
+    //width: 10vw;
+    text-align: center;
+    padding-right: 5vw;
+    background-color: $Headingcolor;
+    height: auto;
+    font-size: $menufontsize;
+
+}
+
+.menu a:hover{
+    color: $helloWorld;
+    transition:  color 1s ease-in-out;
 }
 
 label {
@@ -47,30 +61,43 @@ label {
     display: none;
 }
 
- header.header {
-    position: fixed;
-    top: 0; 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 40px;
-    background-color: $Headingcolor;
-
-    a {
-        height: auto;
-    }
- }
-
  #cover {
-     width: 100vw;
-     height: 100vh;
- }
- 
+    background-image: url(nature-forest-trees-fog.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+}
+
+
+
+
+
+
+
+
+//  header.header {
+//     position: fixed;
+//     top: 0; 
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     height: 40px;
+//     background-color: $Headingcolor;
+
+//     a {
+//         height: auto;
+//     }
+//  }
+
 #headingcontainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 9vw;
+    //padding-top: 9vw;
 
     p {
         letter-spacing: 5px;
@@ -79,14 +106,15 @@ label {
 
     #moreaboutme {
         color: $Headingcolor;
-        border: 2px solid;
+        border: 3px solid;
         padding: 0 28px;
     }
 
     #moreaboutme:hover{
-        border-width: 2px;
-        border-style: solid; 
+        //border-width: 2px;
+        //border-style: solid; 
         border-color: $helloWorld;
+        transition: border-color 2s ease;  
     }
 }
 
@@ -94,47 +122,54 @@ label {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: flex-end;
+    flex: 1;
     width: 20%;
     margin: 0 40%;
-    position: absolute;
-    bottom: 5vw;
+    padding-bottom: 5vw;
+
 
     .social {
         background-size: contain;
         width: 40px;
         height: 40px;
     }
-
+.socialcontainer { align-self: flex-end;}
 
     #linkedin {
         background-image: url(icons/linked.png);
     }
     #linkedin:hover {
         background-image: url(icons/hovercolor/hoverlinked.png);
+        transition: background-image 1s ease; 
     }
     
     #gmail {
         background-image: url(icons/gmail.png);
+        
     }
     #gmail:hover {
         background-image: url(icons/hovercolor/hovergmail.png);
+        transition: background-image 1s ease;  
     }
     #github{
         background-image: url(icons/github.png);
     }
     #github:hover{
         background-image: url(icons/hovercolor/hovergithub.png);
+        transition: background-image 1s ease; 
     }
     #phone {
         background-image: url(icons/phone.png);
     }
     #phone:hover {
         background-image: url(icons/hovercolor/hoverphone.png);
+        transition: background-image 1s ease; 
     }
 }
 
  h2 {
-    font-size: 3vw;
+    font-size: 1.5vw;
     margin: 0;
     color: $helloWorld;
 }
@@ -167,7 +202,7 @@ h1 {
     }
     .menu a {
         display: block;
-        border-bottom: 1px solid #EAEAEB;
+        border-bottom: 1px solid $Headingcolor;
         margin: 0;
     }
     #toggle:checked + .menu {
