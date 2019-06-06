@@ -152,6 +152,112 @@ h3 {
   padding: 10px;
 }
 
+.skillsicons {
+  height: 48px;
+  width: 48px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#ruby {
+  background-image: url(icons/skills_page/ruby.png);
+}
+
+#ruby:hover {
+  background-image: url(icons/skills_page/hover/rubyhover.png);
+  transition: background-image 1s ease;
+}
+
+#python {
+  background-image: url(icons/skills_page/python.png);
+}
+
+#python:hover {
+  background-image: url(icons/skills_page/hover/pythonhover.png);
+  transition: background-image 1s ease;
+}
+
+#html {
+  background-image: url(icons/skills_page/html.png);
+}
+
+#html:hover {
+  background-image: url(icons/skills_page/hover/htmlhover.png);
+  transition: background-image 1s ease;
+}
+
+#css {
+  background-image: url(icons/skills_page/css.png);
+}
+
+#css:hover {
+  background-image: url(icons/skills_page/hover/csshover.png);
+  transition: background-image 1s ease;
+}
+
+#js {
+  background-image: url(icons/skills_page/js.png);
+}
+
+#js:hover {
+  background-image: url(icons/skills_page/hover/jshover.png);
+  transition: background-image 1s ease;
+}
+
+#react {
+  background-image: url(icons/skills_page/react.png);
+}
+
+#react:hover {
+  background-image: url(icons/skills_page/hover/reacthover.png);
+  transition: background-image 1s ease;
+}
+
+#node {
+  background-image: url(icons/skills_page/node.png);
+}
+
+#node:hover {
+  background-image: url(icons/skills_page/hover/nodehover.png);
+  transition: background-image 1s ease;
+}
+
+#mongo {
+  background-image: url(icons/skills_page/mongo.png);
+}
+
+#mongo:hover {
+  background-image: url(icons/skills_page/hover/mongohover.png);
+  transition: background-image 1s ease;
+}
+
+#aws {
+  background-image: url(icons/skills_page/aws.png);
+}
+
+#aws:hover {
+  background-image: url(icons/skills_page/hover/awshover.png);
+  transition: background-image 1s ease;
+}
+
+#heroku {
+  background-image: url(icons/skills_page/heroku.png);
+}
+
+#heroku:hover {
+  background-image: url(icons/skills_page/hover/herokuhover.png);
+  transition: background-image 1s ease;
+}
+
+#stripe {
+  background-image: url(icons/skills_page/stripe.png);
+}
+
+#stripe:hover {
+  background-image: url(icons/skills_page/hover/stripehover.png);
+  transition: background-image 1s ease;
+}
+
 @media only screen and (max-width: 750px) {
   label {
     display: block;
