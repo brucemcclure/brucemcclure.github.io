@@ -3,16 +3,17 @@ html {
 }
 
 body {
+  width: 100vw;
   margin: 0;
   padding: 0;
-  background: #232323;
+  background: #555555;
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
 .nav {
   background-color: #555555;
   text-align: right;
-  height: 250%;
+  height: 5vh;
   min-height: auto;
   position: relative;
 }
@@ -28,7 +29,7 @@ body {
   clear: right;
   text-decoration: none;
   color: #F6F1EB;
-  line-height: 250%;
+  line-height: 5vh;
   text-align: center;
   padding-right: 5vw;
   background-color: #555555;
@@ -42,7 +43,7 @@ body {
 }
 
 label {
-  margin: 0 40px 0 0;
+  margin: 4px 25px 0 0;
   font-size: 26px;
   display: none;
   width: 26px;
@@ -99,9 +100,6 @@ label {
   width: 40px;
   height: 40px;
 }
-#socialcontainer .socialcontainer {
-  align-self: flex-end;
-}
 #socialcontainer #linkedin {
   background-image: url(icons/linked.png);
 }
@@ -149,7 +147,12 @@ h1 {
   background-color: #F6F1EB;
 }
 
-@media only screen and (max-width: 500px) {
+h3 {
+  margin: 0;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 750px) {
   label {
     display: block;
     cursor: pointer;
@@ -159,9 +162,11 @@ h1 {
     text-align: center;
     width: 100%;
     display: none;
+    height: 10vw;
   }
 
   .menu a {
+    color: #ff8d23;
     display: block;
     border-bottom: 1px solid #555555;
     margin: 0;
@@ -170,6 +175,12 @@ h1 {
 
   #toggle:checked + .menu {
     display: block;
+  }
+
+  #socialcontainer {
+    width: 70%;
+    margin: 0 15%;
+    padding-bottom: 15vw;
   }
 }
 

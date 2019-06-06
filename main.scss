@@ -4,9 +4,10 @@
  }
  
  body {
+   width: 100vw;
    margin: 0;
    padding: 0;
-   background: #232323;
+   background: $Headingcolor;
    font-family: "Avenir Next", "Avenir", sans-serif;
  }
 
@@ -50,7 +51,7 @@
 }
 
 label {
-    margin: 0 40px 0 0;
+    margin: 4px 25px 0 0;
     font-size: 26px;
     display: none;
     width: 26px;
@@ -123,6 +124,7 @@ label {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    //justify-content: center;
     align-items: flex-end;
     flex: 1;
     width: 20%;
@@ -135,7 +137,6 @@ label {
         width: 40px;
         height: 40px;
     }
-.socialcontainer { align-self: flex-end;}
 
     #linkedin {
         background-image: url(icons/linked.png);
@@ -187,12 +188,22 @@ h1 {
     width: 100vw;
     height: 100vw;
     background-color: #F6F1EB;
+
+}
+
+h3 {
+    margin: 0;
+    padding: 10px;
 }
 
 
-//  @import 'mediabreaks';
 
-@media only screen and (max-width: 500px) {
+
+
+
+
+
+@media only screen and (max-width: 750px) {
     label {
         display: block;
         cursor: pointer;
@@ -201,8 +212,10 @@ h1 {
         text-align: center;
         width: 100%;
         display: none;
+        height: 10vw;
     }
     .menu a {
+        color: $helloWorld;
         display: block;
         border-bottom: 1px solid $Headingcolor;
         margin: 0;
@@ -210,5 +223,11 @@ h1 {
     }
     #toggle:checked + .menu {
         display: block;
+    }
+    #socialcontainer {
+        width: 70%;
+        margin: 0 15%;
+        padding-bottom: 15vw;
+
     }
 }
