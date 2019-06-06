@@ -16,38 +16,33 @@ body {
 }
 
 .nav {
-  border-bottom: 1px solid hotpink;
+  border-bottom: 1px solid #EAEAEB;
   text-align: right;
   height: 70px;
   line-height: 70px;
 }
-.nav label {
-  margin: 0 40px 0 0;
-  font-size: 25px;
-  line-height: 70px;
-  float: right;
-  color: #ff8d23;
-  display: block;
-  cursor: pointer;
-}
-.nav #toggle {
-  display: none;
-}
-.nav .menu {
+
+.menu {
   margin: 0 30px 0 0;
-  width: 100%;
-  display: none;
 }
-.nav .menu a {
-  clear: right;
+
+.menu a {
   text-decoration: none;
   color: gray;
   margin: 0 10px;
   line-height: 70px;
-  display: block;
 }
-.nav .menu #toggle:checked + .menu {
-  display: block;
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  display: none;
+  width: 26px;
+  float: right;
+}
+
+#toggle {
+  display: none;
 }
 
 header.header {
@@ -146,24 +141,26 @@ h1 {
   background-color: #F6F1EB;
 }
 
-@media only screen and (min-width: 500px) {
-  body {
-    background-color: yellow;
-  }
-
+@media only screen and (max-width: 500px) {
   label {
-    display: none;
+    display: block;
+    cursor: pointer;
   }
 
   .menu {
     text-align: center;
     width: 100%;
-    width: 26px;
+    display: none;
   }
+
   .menu a {
     display: block;
-    border-bottom: 1px solid hotpink;
+    border-bottom: 1px solid #EAEAEB;
     margin: 0;
+  }
+
+  #toggle:checked + .menu {
+    display: block;
   }
 }
 
