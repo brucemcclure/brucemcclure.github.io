@@ -152,15 +152,22 @@ h3 {
   padding: 10px;
 }
 
+.skillsiconsholder {
+  display: flex;
+  flex-direction: row;
+}
+
 .skillsicons {
   height: 48px;
   width: 48px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 #ruby {
   background-image: url(icons/skills_page/ruby.png);
+  background-size: contain;
 }
 
 #ruby:hover {
@@ -183,6 +190,15 @@ h3 {
 
 #html:hover {
   background-image: url(icons/skills_page/hover/htmlhover.png);
+  transition: background-image 1s ease;
+}
+
+#rails {
+  background-image: url(icons/skills_page/rails.png);
+}
+
+#rails:hover {
+  background-image: url(icons/skills_page/hover/railshover.png);
   transition: background-image 1s ease;
 }
 
