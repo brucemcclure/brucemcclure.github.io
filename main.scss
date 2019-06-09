@@ -25,7 +25,8 @@
     background-color: $Headingcolor;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
+    
     //margin: 0 30px 0 0;
     
 }
@@ -38,7 +39,7 @@
     line-height: $menuhight;
     //width: 10vw;
     text-align: center;
-    padding-right: 5vw;
+    //padding-right: 5vw;
     background-color: $Headingcolor;
     height: auto;
     font-size: $menufontsize;
@@ -217,16 +218,17 @@ h3 {
         background-image: url(icons/profilepicture/profilepicture.png);
     }
 
-    #aboutintro {
-        background-color: $lightbackground;
-        width: 45%; 
-        text-align: center;
-        display: flex;
-        flex-direction:column;
-        justify-content: center;
-        font-size: 130%;
-        line-height: 150%;
-    }
+}
+
+.sectionintro {
+    background-color: $lightbackground;
+    width: 45%; 
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    font-size: 130%;
+    line-height: 150%;
 }
 
 #twocolumns {
@@ -414,6 +416,20 @@ h3 {
     transition:  border-color 1s ease-in-out;
 }
 
+// **************************************************End of about Section **********************************************
+
+
+#resume {
+    background-color: $darkbackground;
+    p {
+        background-color: $darkbackground;
+    }
+}
+
+
+
+
+
 
 
 
@@ -493,6 +509,6 @@ h3 {
         }
 
     }
-
+//  ******************************************** End of about section ***************************************************
 
 }

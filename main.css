@@ -5,12 +5,12 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #3b3b3b;
+  background: #555555;
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
 .nav {
-  background-color: #3b3b3b;
+  background-color: #555555;
   text-align: right;
   height: 5vh;
   min-height: auto;
@@ -18,10 +18,10 @@ body {
 }
 
 .menu {
-  background-color: #3b3b3b;
+  background-color: #555555;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .menu a {
@@ -30,8 +30,7 @@ body {
   color: #F6F1EB;
   line-height: 5vh;
   text-align: center;
-  padding-right: 5vw;
-  background-color: #3b3b3b;
+  background-color: #555555;
   height: auto;
   font-size: 1.4vw;
 }
@@ -71,10 +70,10 @@ label {
 }
 #headingcontainer p {
   letter-spacing: 5px;
-  color: #3b3b3b;
+  color: #555555;
 }
 #headingcontainer #moreaboutme {
-  color: #3b3b3b;
+  color: #555555;
   border: 3px solid;
   padding: 0 28px;
 }
@@ -136,7 +135,7 @@ h2 {
 h1 {
   font-size: 7vw;
   margin: 0;
-  color: #3b3b3b;
+  color: #555555;
 }
 
 #about {
@@ -160,7 +159,7 @@ h3 {
   font-size: 200%;
   text-align: center;
   margin: 0;
-  color: #3b3b3b;
+  color: #555555;
 }
 
 #abouttopsection {
@@ -187,7 +186,8 @@ h3 {
   background-repeat: no-repeat;
   background-image: url(icons/profilepicture/profilepicture.png);
 }
-#profilepictureandaboutintro #aboutintro {
+
+.sectionintro {
   background-color: #F6F1EB;
   width: 45%;
   text-align: center;
@@ -388,7 +388,7 @@ h3 {
   justify-content: center;
   width: 20%;
   height: 40%;
-  border: 3px solid #3b3b3b;
+  border: 3px solid #555555;
   padding: 10px;
   margin: 10px;
   text-decoration: none;
@@ -397,6 +397,13 @@ h3 {
 #buttonholder a:hover {
   border-color: #ff8d23;
   transition: border-color 1s ease-in-out;
+}
+
+#resume {
+  background-color: #cac3ba;
+}
+#resume p {
+  background-color: #cac3ba;
 }
 
 @media only screen and (max-width: 750px) {
@@ -415,7 +422,7 @@ h3 {
   .menu a {
     color: #ff8d23;
     display: block;
-    border-bottom: 1px solid #3b3b3b;
+    border-bottom: 1px solid #555555;
     margin: 0;
     font-size: 13px;
   }
