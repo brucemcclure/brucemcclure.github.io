@@ -3,15 +3,14 @@ html {
 }
 
 body {
-  width: 100vw;
   margin: 0;
   padding: 0;
-  background: #555555;
+  background: #3b3b3b;
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
 .nav {
-  background-color: #555555;
+  background-color: #3b3b3b;
   text-align: right;
   height: 5vh;
   min-height: auto;
@@ -19,7 +18,7 @@ body {
 }
 
 .menu {
-  background-color: #555555;
+  background-color: #3b3b3b;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -32,7 +31,7 @@ body {
   line-height: 5vh;
   text-align: center;
   padding-right: 5vw;
-  background-color: #555555;
+  background-color: #3b3b3b;
   height: auto;
   font-size: 1.4vw;
 }
@@ -59,8 +58,7 @@ label {
   background-image: url(nature-forest-trees-fog.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100vw;
-  height: 82vh;
+  height: 84vh;
   display: flex;
   flex-direction: column;
   padding-top: 70px;
@@ -73,10 +71,10 @@ label {
 }
 #headingcontainer p {
   letter-spacing: 5px;
-  color: #555555;
+  color: #3b3b3b;
 }
 #headingcontainer #moreaboutme {
-  color: #555555;
+  color: #3b3b3b;
   border: 3px solid;
   padding: 0 28px;
 }
@@ -138,29 +136,125 @@ h2 {
 h1 {
   font-size: 7vw;
   margin: 0;
-  color: #555555;
+  color: #3b3b3b;
 }
 
 #about {
-  width: 100vw;
-  height: 100vw;
+  width: 100%;
+  height: auto;
   background-color: #F6F1EB;
+}
+#about span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h4 {
+  padding: 80px 0 0 0;
+  font-size: 130%;
+  margin: 0;
+  color: #ff8d23;
+}
+
+h3 {
+  font-size: 200%;
+  text-align: center;
+  margin: 0;
+  color: #3b3b3b;
+}
+
+#abouttopsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#profilepictureandaboutintro {
+  background-color: #F6F1EB;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0;
+}
+#profilepictureandaboutintro #profilepicture {
+  width: 7vw;
+  height: 7vw;
+  margin: 30px;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(icons/profilepicture/profilepicture.png);
+}
+#profilepictureandaboutintro #aboutintro {
+  background-color: #F6F1EB;
+  width: 45%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 130%;
+  line-height: 150%;
+}
+
+#twocolumns {
+  width: 100%;
+  background-color: #F6F1EB;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#introinfo {
+  background-color: #F6F1EB;
+  width: 30%;
+  text-align: center;
 }
 
 h3 {
   margin: 0;
-  padding: 10px;
+  padding: 10px 0;
 }
 
-.skillsiconsholder {
+#skills {
+  background-color: #F6F1EB;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.skillsimageandtext {
+  word-wrap: break-word;
+}
+.skillsimageandtext p {
+  text-align: center;
+  font-size: 10px;
+}
+
+.skillsimageandtext:hover {
+  color: #ff8d23;
+  transition: color 1s ease-in-out;
+}
+
+#skillsiconsholder {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  width: 60%;
 }
 
 .skillsicons {
   height: 48px;
   width: 48px;
-  background-size: cover;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -248,6 +342,7 @@ h3 {
 }
 
 #aws {
+  width: 60px;
   background-image: url(icons/skills_page/aws.png);
 }
 
@@ -274,6 +369,36 @@ h3 {
   transition: background-image 1s ease;
 }
 
+.paragraph {
+  text-align: left;
+  color: #555555;
+  padding: 20px 0;
+}
+
+#buttonholder {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px 0;
+}
+#buttonholder a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 20%;
+  height: 40%;
+  border: 3px solid #3b3b3b;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+#buttonholder a:hover {
+  border-color: #ff8d23;
+  transition: border-color 1s ease-in-out;
+}
+
 @media only screen and (max-width: 750px) {
   label {
     display: block;
@@ -290,7 +415,7 @@ h3 {
   .menu a {
     color: #ff8d23;
     display: block;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #3b3b3b;
     margin: 0;
     font-size: 13px;
   }
@@ -303,6 +428,52 @@ h3 {
     width: 70%;
     margin: 0 15%;
     padding-bottom: 15vw;
+  }
+
+  h3 {
+    font-size: 250%;
+  }
+
+  h4 {
+    font-size: 175%;
+  }
+
+  #profilepictureandaboutintro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  #profilepictureandaboutintro #aboutintro {
+    width: 80%;
+  }
+
+  #profilepicture {
+    width: 30%;
+    height: 30% vw;
+  }
+
+  #twocolumns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #introinfo, #skills {
+    width: 80%;
+  }
+
+  #skillsiconsholder {
+    width: 100%;
+  }
+
+  #buttonholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #buttonholder a {
+    width: 65%;
   }
 }
 

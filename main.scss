@@ -4,7 +4,7 @@
  }
  
  body {
-   width: 100vw;
+   //width: 100vw;
    margin: 0;
    padding: 0;
    background: $Headingcolor;
@@ -67,33 +67,13 @@ label {
     background-image: url(nature-forest-trees-fog.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 82vh;
+    //width: 100vw;
+    height: 84vh;
     display: flex;
     flex-direction: column;
     padding-top: 70px;
 }
 
-
-
-
-
-
-
-
-//  header.header {
-//     position: fixed;
-//     top: 0; 
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
-//     height: 40px;
-//     background-color: $Headingcolor;
-
-//     a {
-//         height: auto;
-//     }
-//  }
 
 #headingcontainer {
     display: flex;
@@ -124,7 +104,6 @@ label {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    //justify-content: center;
     align-items: flex-end;
     flex: 1;
     width: 20%;
@@ -182,28 +161,130 @@ h1 {
     color: $Headingcolor;
 }
 
-// End of landing page 
+//********************************************************* End of landing page 
 
 #about {
-    width: 100vw;
-    height: 100vw;
-    background-color: #F6F1EB;
+    width: 100%;
+    height: auto;
+    background-color: $lightbackground;
 
+    span {
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+h4 {
+    padding: 80px 0 0 0;
+    font-size: 130%;
+    margin: 0;
+    color: $helloWorld;
+}
+
+h3 {
+    font-size: 200%;
+    text-align: center;
+    margin: 0;
+    color: $Headingcolor;
+    
+}
+
+
+#abouttopsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profilepictureandaboutintro {
+    background-color: $lightbackground;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+    //margin: 0 15%;
+
+
+    #profilepicture {
+        width: 7vw;
+        height: 7vw;
+        margin: 30px;
+        border-radius: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(icons/profilepicture/profilepicture.png);
+    }
+
+    #aboutintro {
+        background-color: $lightbackground;
+        width: 45%; 
+        text-align: center;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        font-size: 130%;
+        line-height: 150%;
+    }
+}
+
+#twocolumns {
+    width: 100%;
+    background-color:#F6F1EB;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#introinfo {
+    background-color: $lightbackground;
+    width: 30%;
+    text-align: center;
 }
 
 h3 {
     margin: 0;
-    padding: 10px;
+    padding: 10px 0;
 }
 
-.skillsiconsholder {
+#skills {
+    background-color: $lightbackground;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.skillsimageandtext {
+    word-wrap: break-word;
+
+    p {
+        text-align: center;
+        font-size: 10px;
+    }
+}
+.skillsimageandtext:hover{
+    color: $helloWorld;
+    transition:  color 1s ease-in-out;
+}
+
+#skillsiconsholder {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
 }
 .skillsicons {
     height: 48px;
     width: 48px;
-    background-size: cover;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -239,10 +320,6 @@ h3 {
     background-image: url(icons/skills_page/hover/railshover.png);
     transition: background-image 1s ease; }
 
-
-
-
-
 #css {
     background-image: url(icons/skills_page/css.png);
 }
@@ -277,6 +354,7 @@ h3 {
     transition: background-image 1s ease; 
 }
 #aws {
+    width: 60px;
     background-image: url(icons/skills_page/aws.png);
 }
 #aws:hover {
@@ -284,6 +362,7 @@ h3 {
     transition: background-image 1s ease; 
 }
 #heroku {
+    //width: 40px;
     background-image: url(icons/skills_page/heroku.png);
 }
 #heroku:hover {
@@ -291,15 +370,49 @@ h3 {
     transition: background-image 1s ease; 
 }
 #stripe {
+    //width: 40px;
     background-image: url(icons/skills_page/stripe.png);
 }
 #stripe:hover {
+    
     background-image: url(icons/skills_page/hover/stripehover.png);
     transition: background-image 1s ease; 
 }
 
+.paragraph {
+    text-align: left;
+    color: $paraghraphcolor;
+    padding: 20px 0 ;
+}
+
+#buttonholder {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px 0 ;
+
+    a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 20%;
+        height: 40%;
+        border: 3px solid $Headingcolor;
+        padding: 10px;
+        margin: 10px;
+        text-decoration: none;
+    }
 
 
+
+
+}
+
+#buttonholder a:hover {
+    border-color: $helloWorld;
+    transition:  border-color 1s ease-in-out;
+}
 
 
 
@@ -331,4 +444,55 @@ h3 {
         padding-bottom: 15vw;
 
     }
+
+    h3 {
+        font-size: 250%;
+    }
+    h4 {
+        font-size: 175%
+    }
+
+    #profilepictureandaboutintro {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+
+        #aboutintro {
+            width: 80%;
+        }
+    }
+
+    #profilepicture {
+        width: 30%;
+        height: 30%vw;
+    }
+
+    #twocolumns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #introinfo, #skills {
+        width: 80%;
+    }
+
+
+    #skillsiconsholder {
+        width: 100%;
+    }
+
+    #buttonholder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        a {
+            width: 65%;
+        }
+
+    }
+
+
 }
