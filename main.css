@@ -403,6 +403,34 @@ h3 {
 #resume p {
   background-color: #cac3ba;
 }
+#resume #worktimeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15%;
+}
+#resume #worktimeline .timelineblock {
+  display: flex;
+  flex-direction: row;
+}
+#resume #worktimeline .timelineblock .roleexplanation {
+  border-left: 3px solid hotpink;
+  padding: 0 0 0 5%;
+}
+#resume #educationtimeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15%;
+}
+#resume #educationtimeline .timelineblock {
+  display: flex;
+  flex-direction: row;
+}
+#resume #educationtimeline .timelineblock .roleexplanation {
+  border-left: 3px solid hotpink;
+  padding: 0 0 0 5%;
+}
 
 @media only screen and (max-width: 750px) {
   label {

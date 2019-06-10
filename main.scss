@@ -423,7 +423,49 @@ h3 {
     p {
         background-color: $darkbackground;
     }
+
+#worktimeline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15%;
+
+    .timelineblock {
+        display: flex;
+        flex-direction: row;
+
+        .roleexplanation {
+            border-left: 3px solid hotpink;
+            padding: 0 0 0 5%;
+        }
+
+    }
 }
+
+    #educationtimeline {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 15%;
+    
+        .timelineblock {
+            display: flex;
+            flex-direction: row;
+    
+            .roleexplanation {
+                border-left: 3px solid hotpink;
+                padding: 0 0 0 5%;
+            }
+    
+        }
+    
+    
+    }
+
+
+}
+
+
 
 
 
