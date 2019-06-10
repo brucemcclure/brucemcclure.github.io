@@ -5,7 +5,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #555555;
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
@@ -188,7 +187,6 @@ h3 {
 }
 
 .sectionintro {
-  background-color: #F6F1EB;
   width: 45%;
   text-align: center;
   display: flex;
