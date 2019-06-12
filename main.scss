@@ -176,10 +176,11 @@ h1 {
 }
 
 h4 {
-    padding: 80px 0 0 0;
+    padding: 110px 0 0 0;
     font-size: 130%;
     margin: 0;
     color: $helloWorld;
+    text-align: center;
 }
 
 h3 {
@@ -228,6 +229,13 @@ h3 {
     justify-content: center;
     font-size: 130%;
     line-height: 150%;
+    p {
+        text-align: center;
+    }
+}
+
+.workexpandeducationheading {
+    padding: 40px 0 0 0;
 }
 
 #twocolumns {
@@ -428,46 +436,57 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 15%;
+    margin: 5% 15%;
 
     .timelineblock {
         display: flex;
         flex-direction: row;
 
+
         .roleexplanation {
-            border-left: 3px solid hotpink;
-            padding: 0 0 0 5%;
+
+            border-left: 3px solid $helloWorld;
+            padding: 0 0 0 2.5%;
+
+            h6 {
+                font-size: 100%;
+                margin: 0 0 37px 0;
+            }
         }
 
     }
 }
 
-    #educationtimeline {
+    .educationandworktimeline {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 15%;
+        margin: 5% 15%;
     
         .timelineblock {
             display: flex;
             flex-direction: row;
+
+            .timeperiodandrole {
+                width: auto;
+            }
     
             .roleexplanation {
-                border-left: 3px solid hotpink;
+                border-left: 3px solid $helloWorld;
                 padding: 0 0 0 5%;
             }
     
         }
     
-    
     }
-
 
 }
 
+// ************************************************ End of Resume ********************************************************
 
-
-
+#portfilio {
+    background-color: $lightbackground;
+}
 
 
 
@@ -515,14 +534,18 @@ h3 {
         width: 100%;
         margin: 0;
 
-        #aboutintro {
+        .sectionintro {
             width: 80%;
+        }
+
+        #profilepicture {
+            width: 30vw;
+            height: 30vw;
         }
     }
 
-    #profilepicture {
-        width: 30%;
-        height: 30%vw;
+    .sectionintro {
+        width: 80%;
     }
 
     #twocolumns {
@@ -551,5 +574,26 @@ h3 {
 
     }
 //  ******************************************** End of about section ***************************************************
+#resume {
+.educationandworktimeline {
+    .timelineblock {
+        display: flex;
+        flex-direction: column;
+
+    .timeperiodandrole {
+        text-align: center;
+    }
+
+    .roleexplanation {
+        border-bottom: 3px solid $helloWorld;
+        width: 100%;
+
+        h5 {
+            text-align: center;
+        }
+    }
+    }
+}
+}
 
 }
