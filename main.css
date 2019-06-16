@@ -101,21 +101,21 @@ label {
 }
 #socialcontainer #linkedin:hover {
   background-image: url(icons/hovercolor/hoverlinked.png);
-  transition: background-image 1s ease;
+  transition: background-image 1.5s ease;
 }
 #socialcontainer #gmail {
   background-image: url(icons/gmail.png);
 }
 #socialcontainer #gmail:hover {
   background-image: url(icons/hovercolor/hovergmail.png);
-  transition: background-image 1s ease;
+  transition: background-image 1.5s ease;
 }
 #socialcontainer #github {
   background-image: url(icons/github.png);
 }
 #socialcontainer #github:hover {
   background-image: url(icons/hovercolor/hovergithub.png);
-  transition: background-image 1s ease;
+  transition: background-image 1.5s ease;
 }
 #socialcontainer #phone {
   background-image: url(icons/phone.png);
@@ -263,6 +263,7 @@ h3 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  transition: all 2s ease;
 }
 
 #ruby {
@@ -272,7 +273,7 @@ h3 {
 
 #ruby:hover {
   background-image: url(icons/skills_page/hover/rubyhover.png);
-  transition: background-image 1s ease;
+  transform: scale(1.15);
 }
 
 #python {
@@ -281,7 +282,7 @@ h3 {
 
 #python:hover {
   background-image: url(icons/skills_page/hover/pythonhover.png);
-  transition: background-image 1s ease;
+  transform: scale(1.15);
 }
 
 #html {
@@ -290,7 +291,7 @@ h3 {
 
 #html:hover {
   background-image: url(icons/skills_page/hover/htmlhover.png);
-  transition: background-image 1s ease;
+  transform: scale(1.15);
 }
 
 #rails {
@@ -299,7 +300,7 @@ h3 {
 
 #rails:hover {
   background-image: url(icons/skills_page/hover/railshover.png);
-  transition: background-image 1s ease;
+  transform: scale(1.15);
 }
 
 #css {
@@ -308,7 +309,7 @@ h3 {
 
 #css:hover {
   background-image: url(icons/skills_page/hover/csshover.png);
-  transition: background-image 1s ease;
+  transform: scale(1.15);
 }
 
 #js {
@@ -317,7 +318,7 @@ h3 {
 
 #js:hover {
   background-image: url(icons/skills_page/hover/jshover.png);
-  transition: background-image 1s ease;
+  transform: scale(1.15);
 }
 
 #react {
@@ -326,7 +327,7 @@ h3 {
 
 #react:hover {
   background-image: url(icons/skills_page/hover/reacthover.png);
-  transition: background-image 1s ease;
+  transform: scale(1.15);
 }
 
 #node {
@@ -335,7 +336,7 @@ h3 {
 
 #node:hover {
   background-image: url(icons/skills_page/hover/nodehover.png);
-  transition: background-image 1s ease;
+  transform: scale(1.15);
 }
 
 #mongo {
@@ -344,7 +345,7 @@ h3 {
 
 #mongo:hover {
   background-image: url(icons/skills_page/hover/mongohover.png);
-  transition: background-image 1s ease;
+  transform: scale(1.15);
 }
 
 #aws {
@@ -354,7 +355,7 @@ h3 {
 
 #aws:hover {
   background-image: url(icons/skills_page/hover/awshover.png);
-  transition: background-image 1s ease;
+  transform: scale(1.15);
 }
 
 #heroku {
@@ -363,7 +364,7 @@ h3 {
 
 #heroku:hover {
   background-image: url(icons/skills_page/hover/herokuhover.png);
-  transition: background-image 1s ease;
+  transform: scale(1.15);
 }
 
 #stripe {
@@ -372,7 +373,7 @@ h3 {
 
 #stripe:hover {
   background-image: url(icons/skills_page/hover/stripehover.png);
-  transition: background-image 1s ease;
+  transform: scale(1.15);
 }
 
 .paragraph {
@@ -411,24 +412,6 @@ h3 {
 #resume p {
   background-color: #cac3ba;
 }
-#resume #worktimeline {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 5% 15%;
-}
-#resume #worktimeline .timelineblock {
-  display: flex;
-  flex-direction: row;
-}
-#resume #worktimeline .timelineblock .roleexplanation {
-  border-left: 3px solid #ff8d23;
-  padding: 0 0 0 2.5%;
-}
-#resume #worktimeline .timelineblock .roleexplanation h6 {
-  font-size: 100%;
-  margin: 0 0 37px 0;
-}
 #resume .educationandworktimeline {
   display: flex;
   flex-direction: column;
@@ -439,16 +422,85 @@ h3 {
   display: flex;
   flex-direction: row;
 }
+#resume .educationandworktimeline .timelineblock p {
+  font-size: 100%;
+  color: #555555;
+}
+#resume .educationandworktimeline .timelineblock h5 {
+  color: #363636;
+  font-size: 125%;
+  margin: 0;
+}
 #resume .educationandworktimeline .timelineblock .timeperiodandrole {
-  width: auto;
+  width: 40%;
+  padding: 0 7.5% 0 0;
+  text-align: right;
 }
 #resume .educationandworktimeline .timelineblock .roleexplanation {
-  border-left: 3px solid #ff8d23;
-  padding: 0 0 0 5%;
+  border-left: 1.5px solid #ff8d23;
+  padding: 0 7.5%;
+}
+#resume .educationandworktimeline .timelineblock .roleexplanation h5 {
+  margin: 0;
 }
 
 #portfilio {
-  background-color: #F6F1EB;
+  background-color: yellow;
+}
+
+#portfoliopieceholder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 88%;
+  margin: 0 6%;
+}
+
+.portfoliopiece {
+  height: 200px;
+  width: 28%;
+  margin-bottom: 50px;
+  transition: transform 1s;
+  text-align: center;
+}
+
+.portfoliopiece:hover {
+  transform: scale(1.05);
+}
+
+.portfolioimage {
+  background-color: purple;
+  width: 100%;
+  height: 70%;
+}
+
+#contact {
+  background-color: #cac3ba;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+#contact form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contact form input[type=text] {
+  background: none;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #555555;
+}
+#contact form button {
+  width: 100%;
+  background-color: yellow;
+}
+
+input[type=text]:focus {
+  border-bottom: 2px solid #ff8d23;
+  transition: border-bottom 1s ease-in-out;
 }
 
 @media only screen and (max-width: 750px) {
@@ -516,9 +568,76 @@ h3 {
   #introinfo, #skills {
     width: 80%;
   }
+  #introinfo #buttonholder, #skills #buttonholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #introinfo #buttonholder a, #skills #buttonholder a {
+    width: 65%;
+  }
+
+  #buttonholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #buttonholder a {
+    width: 65%;
+  }
+
+  #buttonholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #buttonholder a {
+    width: 65%;
+  }
+
+  #buttonholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #buttonholder a {
+    width: 65%;
+  }
 
   #skillsiconsholder {
     width: 100%;
+  }
+  #skillsiconsholder #buttonholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #skillsiconsholder #buttonholder a {
+    width: 65%;
+  }
+  #skillsiconsholder #buttonholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #skillsiconsholder #buttonholder a {
+    width: 65%;
+  }
+
+  #buttonholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #buttonholder a {
+    width: 65%;
   }
 
   #buttonholder {
@@ -534,16 +653,27 @@ h3 {
   #resume .educationandworktimeline .timelineblock {
     display: flex;
     flex-direction: column;
+    margin-bottom: 30%;
   }
   #resume .educationandworktimeline .timelineblock .timeperiodandrole {
     text-align: center;
+    width: 100%;
   }
   #resume .educationandworktimeline .timelineblock .roleexplanation {
-    border-bottom: 3px solid #ff8d23;
+    border-bottom: 1.5px solid #ff8d23;
     width: 100%;
   }
   #resume .educationandworktimeline .timelineblock .roleexplanation h5 {
     text-align: center;
+  }
+
+  #portfolio #portfoliopieceholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #portfolio #portfoliopieceholder .portfoliopiece {
+    width: 75%;
   }
 }
 

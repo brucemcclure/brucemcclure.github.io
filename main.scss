@@ -123,7 +123,7 @@ label {
     }
     #linkedin:hover {
         background-image: url(icons/hovercolor/hoverlinked.png);
-        transition: background-image 1s ease; 
+        transition: background-image 1.5s ease; 
     }
     
     #gmail {
@@ -132,14 +132,14 @@ label {
     }
     #gmail:hover {
         background-image: url(icons/hovercolor/hovergmail.png);
-        transition: background-image 1s ease;  
+        transition: background-image 1.5s ease;  
     }
     #github{
         background-image: url(icons/github.png);
     }
     #github:hover{
         background-image: url(icons/hovercolor/hovergithub.png);
-        transition: background-image 1s ease; 
+        transition: background-image 1.5s ease; 
     }
     #phone {
         background-image: url(icons/phone.png);
@@ -296,6 +296,7 @@ h3 {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    transition: all 2s ease;
 }
 
 
@@ -305,62 +306,64 @@ h3 {
 }
 #ruby:hover {
     background-image: url(icons/skills_page/hover/rubyhover.png);
-    transition: background-image 1s ease; 
+    transform: scale(1.15);
 }
 #python {
     background-image: url(icons/skills_page/python.png);
 }
 #python:hover {
     background-image: url(icons/skills_page/hover/pythonhover.png);
-    transition: background-image 1s ease;
+    transform: scale(1.15);
 }
 #html {
     background-image: url(icons/skills_page/html.png);
 }
 #html:hover {
     background-image: url(icons/skills_page/hover/htmlhover.png);
-    transition: background-image 1s ease; }
-
-
+    transform: scale(1.15); 
+}
 #rails {
     background-image: url(icons/skills_page/rails.png);
 }
 #rails:hover {
     background-image: url(icons/skills_page/hover/railshover.png);
-    transition: background-image 1s ease; }
+    transform: scale(1.15); 
+}
 
 #css {
     background-image: url(icons/skills_page/css.png);
 }
 #css:hover {
     background-image: url(icons/skills_page/hover/csshover.png);
-    transition: background-image 1s ease; }
+    transform: scale(1.15); 
+}
 #js {
     background-image: url(icons/skills_page/js.png);
 }
 #js:hover {
     background-image: url(icons/skills_page/hover/jshover.png);
-    transition: background-image 1s ease; 
+    transform: scale(1.15); 
 }
 #react {
     background-image: url(icons/skills_page/react.png);
 }
 #react:hover {
     background-image: url(icons/skills_page/hover/reacthover.png);
-    transition: background-image 1s ease; 
+    transform: scale(1.15); 
 }    
 #node {
     background-image: url(icons/skills_page/node.png);
 }
 #node:hover {
     background-image: url(icons/skills_page/hover/nodehover.png);
-    transition: background-image 1s ease;}
+    transform: scale(1.15);
+}
 #mongo {
     background-image: url(icons/skills_page/mongo.png);
 }
 #mongo:hover {
     background-image: url(icons/skills_page/hover/mongohover.png);
-    transition: background-image 1s ease; 
+    transform: scale(1.15); 
 }
 #aws {
     width: 60px;
@@ -368,7 +371,7 @@ h3 {
 }
 #aws:hover {
     background-image: url(icons/skills_page/hover/awshover.png);
-    transition: background-image 1s ease; 
+    transform: scale(1.15); 
 }
 #heroku {
     //width: 40px;
@@ -376,7 +379,7 @@ h3 {
 }
 #heroku:hover {
     background-image: url(icons/skills_page/hover/herokuhover.png);
-    transition: background-image 1s ease; 
+    transform: scale(1.15); 
 }
 #stripe {
     //width: 40px;
@@ -385,7 +388,7 @@ h3 {
 #stripe:hover {
     
     background-image: url(icons/skills_page/hover/stripehover.png);
-    transition: background-image 1s ease; 
+    transform: scale(1.15); 
 }
 
 .paragraph {
@@ -432,30 +435,30 @@ h3 {
         background-color: $darkbackground;
     }
 
-#worktimeline {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 5% 15%;
+// #worktimeline {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     margin: 5% 15%;
 
-    .timelineblock {
-        display: flex;
-        flex-direction: row;
+//     .timelineblock {
+//         display: flex;
+//         flex-direction: row;
+//         margin-bottom: 50%;
 
+//         .roleexplanation {
 
-        .roleexplanation {
+//             border-left: 3px solid $helloWorld;
+//             padding: 0 0 0 2.5%;
 
-            border-left: 3px solid $helloWorld;
-            padding: 0 0 0 2.5%;
+//             h6 {
+//                 font-size: 100%;
+//                 margin: 0 0 37px 0;
+//             }
+//         }
 
-            h6 {
-                font-size: 100%;
-                margin: 0 0 37px 0;
-            }
-        }
-
-    }
-}
+//     }
+// }
 
     .educationandworktimeline {
         display: flex;
@@ -466,30 +469,128 @@ h3 {
         .timelineblock {
             display: flex;
             flex-direction: row;
+            //padding-bottom: 5%;
+
+            p{
+                font-size: 100%;
+                color: $Headingcolor;
+            }
+
+            h5 {
+                color: $DarkerHeadingcolor;
+                font-size: 125%;
+                margin: 0;
+            }
 
             .timeperiodandrole {
-                width: auto;
+                width: 40%;
+                padding: 0 7.5% 0 0;
+                text-align: right;
+
             }
     
             .roleexplanation {
-                border-left: 3px solid $helloWorld;
-                padding: 0 0 0 5%;
+                border-left: 1.5px solid $helloWorld;
+                padding: 0 7.5%;
+                h5 {
+                    margin: 0;
+                }
             }
     
         }
     
     }
 
+
+
+
+
+
+
+    // .inbetweentimelineblockicon {
+    //     width: 70px;
+    //     height: 70px;
+    //     border-radius: 50%;
+    //     border-color: $helloWorld;
+    //     background-color: aqua;
+    //     margin-left: 27.4%;
+    //     margin-right: 72.6%;
+    // }
+
+
+
 }
 
 // ************************************************ End of Resume ********************************************************
 
 #portfilio {
-    background-color: $lightbackground;
+    background-color: yellow;
 }
 
+#portfoliopieceholder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    width: 88%;
+    margin: 0 6%;
+
+}
+
+.portfoliopiece {
+    height: 200px;
+    width: 28%;
+    margin-bottom: 50px;
+    transition: transform 1s;
+    text-align: center;
+    }
+
+    .portfoliopiece:hover {
+        transform: scale(1.05);
+    }
+
+    .portfolioimage {
+        background-color: purple;
+        width: 100%;
+        height: 70%;
+    }
 
 
+    // border-color: $helloWorld;
+    // transition:  border-color 1s ease-in-out;
+
+
+
+//-----------------------------------------------------End of Portfolio---------------------------------------------------//
+
+#contact {
+    background-color: $darkbackground;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input[type=text] {
+            background: none;
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid $Headingcolor;
+        }
+        button {
+            width: 100%;
+            background-color: yellow;
+        }
+    }
+}
+
+input[type=text]:focus {
+    border-bottom: 2px solid $helloWorld;
+    transition:  border-bottom 1s ease-in-out;
+}
 
 
 
@@ -555,13 +656,83 @@ h3 {
 
     #introinfo, #skills {
         width: 80%;
+    #buttonholder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        a {
+            width: 65%;
+        }
+
+    }    }
+    #buttonholder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        a {
+            width: 65%;
+        }
+
     }
+    #buttonholder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
 
+        a {
+            width: 65%;
+        }
 
-    #skillsiconsholder {
-        width: 100%;
     }
+    #buttonholder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
 
+        a {
+            width: 65%;
+        }
+
+    }    #skillsiconsholder {
+    #buttonholder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        a {
+            width: 65%;
+        }
+
+    }        width: 100%;
+    #buttonholder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        a {
+            width: 65%;
+        }
+
+    }    }
+    #buttonholder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        a {
+            width: 65%;
+        }
+
+    }
     #buttonholder {
         display: flex;
         flex-direction: column;
@@ -579,13 +750,17 @@ h3 {
     .timelineblock {
         display: flex;
         flex-direction: column;
+        margin-bottom: 30%;
 
     .timeperiodandrole {
         text-align: center;
+        width: 100%;
+        // display: flex;
+        // flex-direction: row;
     }
 
     .roleexplanation {
-        border-bottom: 3px solid $helloWorld;
+        border-bottom: 1.5px solid $helloWorld;
         width: 100%;
 
         h5 {
@@ -596,4 +771,17 @@ h3 {
 }
 }
 
+
+#portfolio {
+
+
+    #portfoliopieceholder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .portfoliopiece{
+            width: 75%;
+        }
+    }
+}
 }
