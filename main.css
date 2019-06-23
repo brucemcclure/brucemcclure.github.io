@@ -26,7 +26,7 @@ body {
 .menu a {
   clear: right;
   text-decoration: none;
-  color: #F6F1EB;
+  color: #f6f1eb;
   line-height: 5vh;
   text-align: center;
   background-color: #555555;
@@ -148,7 +148,7 @@ h1 {
 }
 
 h4 {
-  padding: 110px 0 0 0;
+  padding: 75px 0 0 0;
   font-size: 130%;
   margin: 0;
   color: #ff8d23;
@@ -156,7 +156,7 @@ h4 {
 }
 
 h3 {
-  font-size: 200%;
+  font-size: 100%;
   text-align: center;
   margin: 0;
   color: #555555;
@@ -206,7 +206,7 @@ h3 {
 
 #twocolumns {
   width: 100%;
-  background-color: #F6F1EB;
+  background-color: #f6f1eb;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -421,6 +421,7 @@ h3 {
 #resume .educationandworktimeline .timelineblock {
   display: flex;
   flex-direction: row;
+  margin-bottom: 5%;
 }
 #resume .educationandworktimeline .timelineblock p {
   font-size: 100%;
@@ -432,7 +433,7 @@ h3 {
   margin: 0;
 }
 #resume .educationandworktimeline .timelineblock .timeperiodandrole {
-  width: 40%;
+  width: 60%;
   padding: 0 7.5% 0 0;
   text-align: right;
 }
@@ -443,9 +444,17 @@ h3 {
 #resume .educationandworktimeline .timelineblock .roleexplanation h5 {
   margin: 0;
 }
+#resume .educationandworktimeline .timelineblock .roleexplanation .roledetails {
+  width: auto;
+}
+#resume .educationandworktimeline .timelineblock .roleexplanation .roledetailsparagraph {
+  width: 505px;
+}
 
 #portfilio {
-  background-color: yellow;
+  background-color: #F6F1EB;
+  height: auto;
+  padding-bottom: 10%;
 }
 
 #portfoliopieceholder {
@@ -469,9 +478,23 @@ h3 {
 }
 
 .portfolioimage {
-  background-color: purple;
   width: 100%;
   height: 70%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#vin {
+  background-image: url(./backgrounds/vin-count.png);
+}
+
+#fines {
+  background-image: url(./backgrounds/fines.jpeg);
+}
+
+#port {
+  background-image: url(./backgrounds/port.png);
 }
 
 #contact {
@@ -479,7 +502,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: auto;
 }
 #contact form {
   width: 100%;
@@ -487,6 +510,7 @@ h3 {
   flex-direction: column;
   align-items: center;
 }
+#contact form #contactMessage,
 #contact form input[type=text] {
   background: none;
   width: 100%;
@@ -529,8 +553,8 @@ input[type=text]:focus {
   }
 
   #socialcontainer {
-    width: 70%;
-    margin: 0 15%;
+    width: 50%;
+    margin: 0 25%;
     padding-bottom: 15vw;
   }
 
@@ -565,16 +589,19 @@ input[type=text]:focus {
     align-items: center;
   }
 
-  #introinfo, #skills {
+  #introinfo,
+#skills {
     width: 80%;
   }
-  #introinfo #buttonholder, #skills #buttonholder {
+  #introinfo #buttonholder,
+#skills #buttonholder {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
   }
-  #introinfo #buttonholder a, #skills #buttonholder a {
+  #introinfo #buttonholder a,
+#skills #buttonholder a {
     width: 65%;
   }
 
@@ -622,6 +649,7 @@ input[type=text]:focus {
   }
   #skillsiconsholder #buttonholder {
     display: flex;
+    background-color: #F6F1EB;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -650,14 +678,22 @@ input[type=text]:focus {
     width: 65%;
   }
 
+  #resume {
+    padding-bottom: 10%;
+  }
+  #resume .educationandworktimeline ul {
+    padding-left: 10%;
+  }
   #resume .educationandworktimeline .timelineblock {
     display: flex;
     flex-direction: column;
     margin-bottom: 30%;
+    padding-right: 15%;
   }
   #resume .educationandworktimeline .timelineblock .timeperiodandrole {
     text-align: center;
     width: 100%;
+    padding: 0 0 0 5%;
   }
   #resume .educationandworktimeline .timelineblock .roleexplanation {
     border-bottom: 1.5px solid #ff8d23;
@@ -665,6 +701,9 @@ input[type=text]:focus {
   }
   #resume .educationandworktimeline .timelineblock .roleexplanation h5 {
     text-align: center;
+  }
+  #resume .educationandworktimeline .timelineblock .roleexplanation .roledetailsparagraph {
+    width: 100%;
   }
 
   #portfolio #portfoliopieceholder {
@@ -675,6 +714,9 @@ input[type=text]:focus {
   #portfolio #portfoliopieceholder .portfoliopiece {
     width: 75%;
   }
+}
+#dontDisplayOnMobile {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */
