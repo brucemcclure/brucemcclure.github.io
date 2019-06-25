@@ -661,7 +661,7 @@ input[type="text"]:focus {
       width: 65%;
     }
   }
-  #skillsiconsholder {
+  #skills #skillsiconsholder {
     #buttonholder {
       display: flex;
       flex-direction: column;
@@ -672,7 +672,7 @@ input[type="text"]:focus {
         width: 65%;
       }
     }
-    width: 60%;
+    width: 100%;
     #buttonholder {
       display: flex;
       background-color: $lightbackground;

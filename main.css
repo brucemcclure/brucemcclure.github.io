@@ -636,26 +636,26 @@ input[type=text]:focus {
     width: 65%;
   }
 
-  #skillsiconsholder {
-    width: 60%;
+  #skills #skillsiconsholder {
+    width: 100%;
   }
-  #skillsiconsholder #buttonholder {
+  #skills #skillsiconsholder #buttonholder {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
   }
-  #skillsiconsholder #buttonholder a {
+  #skills #skillsiconsholder #buttonholder a {
     width: 65%;
   }
-  #skillsiconsholder #buttonholder {
+  #skills #skillsiconsholder #buttonholder {
     display: flex;
     background-color: #F6F1EB;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
   }
-  #skillsiconsholder #buttonholder a {
+  #skills #skillsiconsholder #buttonholder a {
     width: 65%;
   }
 
