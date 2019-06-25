@@ -707,6 +707,9 @@ input[type=text]:focus {
     width: 100%;
   }
 
+  #portfolio {
+    margin-bottom: 10%;
+  }
   #portfolio #portfoliopieceholder {
     display: flex;
     flex-direction: column;
