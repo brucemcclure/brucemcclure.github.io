@@ -137,6 +137,275 @@ h1 {
   color: #555555;
 }
 
+#about {
+  width: 100%;
+  height: auto;
+  background-color: #F6F1EB;
+}
+#about span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h4 {
+  padding: 75px 0 0 0;
+  font-size: 130%;
+  margin: 0;
+  color: #ff8d23;
+  text-align: center;
+}
+
+h3 {
+  font-size: 230%;
+  text-align: center;
+  margin: 0;
+  color: #555555;
+}
+
+#abouttopsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#profilepictureandaboutintro {
+  background-color: #F6F1EB;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0;
+}
+#profilepictureandaboutintro #profilepicture {
+  width: 7vw;
+  height: 7vw;
+  margin: 30px;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(icons/profilepicture/profilepicture.png);
+}
+
+.sectionintro {
+  width: 45%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 130%;
+  line-height: 150%;
+}
+.sectionintro p {
+  text-align: center;
+}
+
+.workexpandeducationheading {
+  padding: 40px 0 0 0;
+}
+
+#twocolumns {
+  width: 100%;
+  background-color: #f6f1eb;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#introinfo {
+  background-color: #F6F1EB;
+  width: 30%;
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+#skills {
+  background-color: #F6F1EB;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.skillsimageandtext {
+  word-wrap: break-word;
+}
+.skillsimageandtext p {
+  text-align: center;
+  font-size: 10px;
+}
+
+.skillsimageandtext:hover {
+  color: #ff8d23;
+  transition: color 1s ease-in-out;
+}
+
+#skillsiconsholder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+.skillsicons {
+  height: 48px;
+  width: 48px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 2s ease;
+}
+
+#ruby {
+  background-image: url(icons/skills_page/ruby.png);
+  background-size: contain;
+}
+
+#ruby:hover {
+  background-image: url(icons/skills_page/hover/rubyhover.png);
+  transform: scale(1.15);
+}
+
+#python {
+  background-image: url(icons/skills_page/python.png);
+}
+
+#python:hover {
+  background-image: url(icons/skills_page/hover/pythonhover.png);
+  transform: scale(1.15);
+}
+
+#html {
+  background-image: url(icons/skills_page/html.png);
+}
+
+#html:hover {
+  background-image: url(icons/skills_page/hover/htmlhover.png);
+  transform: scale(1.15);
+}
+
+#rails {
+  background-image: url(icons/skills_page/rails.png);
+}
+
+#rails:hover {
+  background-image: url(icons/skills_page/hover/railshover.png);
+  transform: scale(1.15);
+}
+
+#css {
+  background-image: url(icons/skills_page/css.png);
+}
+
+#css:hover {
+  background-image: url(icons/skills_page/hover/csshover.png);
+  transform: scale(1.15);
+}
+
+#js {
+  background-image: url(icons/skills_page/js.png);
+}
+
+#js:hover {
+  background-image: url(icons/skills_page/hover/jshover.png);
+  transform: scale(1.15);
+}
+
+#react {
+  background-image: url(icons/skills_page/react.png);
+}
+
+#react:hover {
+  background-image: url(icons/skills_page/hover/reacthover.png);
+  transform: scale(1.15);
+}
+
+#node {
+  background-image: url(icons/skills_page/node.png);
+}
+
+#node:hover {
+  background-image: url(icons/skills_page/hover/nodehover.png);
+  transform: scale(1.15);
+}
+
+#mongo {
+  background-image: url(icons/skills_page/mongo.png);
+}
+
+#mongo:hover {
+  background-image: url(icons/skills_page/hover/mongohover.png);
+  transform: scale(1.15);
+}
+
+#aws {
+  width: 60px;
+  background-image: url(icons/skills_page/aws.png);
+}
+
+#aws:hover {
+  background-image: url(icons/skills_page/hover/awshover.png);
+  transform: scale(1.15);
+}
+
+#heroku {
+  background-image: url(icons/skills_page/heroku.png);
+}
+
+#heroku:hover {
+  background-image: url(icons/skills_page/hover/herokuhover.png);
+  transform: scale(1.15);
+}
+
+#stripe {
+  background-image: url(icons/skills_page/stripe.png);
+}
+
+#stripe:hover {
+  background-image: url(icons/skills_page/hover/stripehover.png);
+  transform: scale(1.15);
+}
+
+.paragraph {
+  text-align: left;
+  color: #555555;
+  padding: 20px 0;
+}
+
+#buttonholder {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px 0;
+}
+#buttonholder a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 20%;
+  height: 40%;
+  border: 3px solid #555555;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+#buttonholder a:hover {
+  border-color: #ff8d23;
+  transition: border-color 1s ease-in-out;
+}
+
 #resume {
   background-color: #cac3ba;
 }
