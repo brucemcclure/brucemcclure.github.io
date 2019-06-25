@@ -544,6 +544,7 @@ input[type=text]:focus {
     color: #ff8d23;
     display: block;
     border-bottom: 1px solid #555555;
+    border-top: 1px solid #555555;
     margin: 0;
     font-size: 13px;
   }

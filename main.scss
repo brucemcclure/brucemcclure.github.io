@@ -572,6 +572,7 @@ input[type="text"]:focus {
     color: $helloWorld;
     display: block;
     border-bottom: 1px solid $Headingcolor;
+    border-top: 1px solid $Headingcolor;
     margin: 0;
     font-size: 13px;
   }
