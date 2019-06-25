@@ -49,9 +49,11 @@ body {
   transition: color 1s ease-in-out;
 }
 
+#labelbox {
+  padding: 2px 5px;
+}
+
 label {
-  //here
-  margin: 4px 0px 0 0;
   font-size: 26px;
   display: none;
   width: 26px;
@@ -89,6 +91,9 @@ label {
     color: $Headingcolor;
     border: 3px solid;
     padding: 0 28px;
+    a {
+      text-decoration: none;
+    }
   }
 
   #moreaboutme:hover {
