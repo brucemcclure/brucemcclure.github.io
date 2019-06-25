@@ -637,7 +637,7 @@ input[type=text]:focus {
   }
 
   #skills #skillsiconsholder {
-    width: 100%;
+    width: 70%;
   }
   #skills #skillsiconsholder #buttonholder {
     display: flex;
