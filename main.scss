@@ -112,7 +112,7 @@ label {
   flex: 1;
   width: 20%;
   margin: 0 40%;
-  padding-bottom: 5vw;
+  padding: 5vw 0;
 
   .social {
     background-size: contain;
@@ -539,6 +539,15 @@ h3 {
   align-items: center;
   height: auto;
 
+  #socialcontainer {
+    //padding: 15vw, 0;
+  }
+
+  p {
+    padding: 0;
+    //margin: 0;
+  }
+
   form {
     width: 100%;
     display: flex;
@@ -668,6 +677,10 @@ input[type="text"]:focus {
     }
   }
   #skills #skillsiconsholder {
+    .skillsicons {
+      height: 46px;
+      width: 46px;
+    }
     #buttonholder {
       display: flex;
       flex-direction: column;
@@ -691,6 +704,7 @@ input[type="text"]:focus {
       }
     }
   }
+
   #buttonholder {
     display: flex;
     flex-direction: column;
@@ -750,6 +764,7 @@ input[type="text"]:focus {
   }
 
   #portfolio {
+    padding-bottom: 14%;
     #portfoliopieceholder {
       display: flex;
       flex-direction: column;
@@ -759,10 +774,14 @@ input[type="text"]:focus {
       }
     }
   }
-}
-
-#contact {
-  //height: 100%;
+  #contact {
+    height: 80vh;
+    .sectionintro {
+      #socialcontainer {
+        padding-bottom: 5vw;
+      }
+    }
+  }
 }
 
 #dontDisplayOnMobile {
