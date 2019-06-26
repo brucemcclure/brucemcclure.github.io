@@ -91,7 +91,8 @@ label {
     color: $Headingcolor;
     border: 3px solid;
     padding: 0 28px;
-    a {
+    a:link {
+      background-color: red;
       text-decoration: none;
     }
   }
@@ -455,6 +456,7 @@ h3 {
 
       .roleexplanation {
         border-left: 1.5px solid $helloWorld;
+        //border-bottom: 1.5px solid $helloWorld;
         padding: 0 7.5%;
         h5 {
           margin: 0;
@@ -539,10 +541,6 @@ h3 {
   align-items: center;
   height: auto;
 
-  #socialcontainer {
-    //padding: 15vw, 0;
-  }
-
   p {
     padding: 0;
     //margin: 0;
@@ -625,6 +623,9 @@ input[type="text"]:focus {
 
   .sectionintro {
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
   }
 
   #twocolumns {
@@ -775,7 +776,7 @@ input[type="text"]:focus {
     }
   }
   #contact {
-    height: 80vh;
+    padding-bottom: 75px;
     .sectionintro {
       #socialcontainer {
         padding-bottom: 5vw;
