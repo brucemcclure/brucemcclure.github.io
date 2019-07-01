@@ -80,13 +80,13 @@ label {
   border: 3px solid;
   padding: 0 28px;
 }
-#headingcontainer #moreaboutme a:link {
-  background-color: red;
-  text-decoration: none;
-}
 #headingcontainer #moreaboutme:hover {
   border-color: #ff8d23;
   transition: border-color 2s ease;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 #socialcontainer {
@@ -396,6 +396,11 @@ h3 {
   flex-direction: row;
   justify-content: space-around;
   padding: 30px 0;
+}
+#buttonholder a:link,
+#buttonholder a:visited {
+  text-decoration: none;
+  color: #555555;
 }
 #buttonholder a {
   display: flex;
